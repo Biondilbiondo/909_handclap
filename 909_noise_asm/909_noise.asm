@@ -49,8 +49,8 @@
 loop
     ; This block transfer the first tap to MSB of TEMP
     bcf TEMP, 7 ; Clear MSB of temp
-    ;btfsc SHIFT_REG1, 4 ; Tap 13
-    btfsc SHIFT_REG3, 3 ; Tap 28
+    btfsc SHIFT_REG1, 5 ; Tap 13
+    ;btfsc SHIFT_REG3, 3 ; Tap 28
     ;btfsc SHIFT_REG0, 2 ; Tap 3
     bsf TEMP, 7 ; Set if the bit above is set
 
